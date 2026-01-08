@@ -19,7 +19,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/crypto/ssh"
 
-	"github.com/getsops/sops/v3/logging"
+	"github.com/jacobpbrugh/sops/v3/logging"
 	"github.com/google/shlex"
 )
 
@@ -488,6 +488,12 @@ func (key *MasterKey) loadIdentities() (ParsedIdentities, []string, errSet) {
 // key or a public ssh key.
 func parseRecipient(recipient string) (age.Recipient, error) {
 	switch {
+	case strings.HasPrefix(recipient, "age1pq1") && strings.Count(recipient, "1") > 2:
+		parsedRecipient, err := plugin.NewRecipient(recipient, pluginTerminalUI)
+		if err != nil {
+			return nil, fmt.Errorf("failed to parse input as age key from age plugin: %w", err)
+		}
+		return parsedRecipient, nil
 	case strings.HasPrefix(recipient, "age1pq1"):
 		parsedRecipient, err := age.ParseHybridRecipient(recipient)
 		if err != nil {

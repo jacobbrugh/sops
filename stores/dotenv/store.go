@@ -1,13 +1,13 @@
-package dotenv //import "github.com/getsops/sops/v3/stores/dotenv"
+package dotenv //import "github.com/jacobpbrugh/sops/v3/stores/dotenv"
 
 import (
 	"bytes"
 	"fmt"
 	"strings"
 
-	"github.com/getsops/sops/v3"
-	"github.com/getsops/sops/v3/config"
-	"github.com/getsops/sops/v3/stores"
+	"github.com/jacobpbrugh/sops/v3"
+	"github.com/jacobpbrugh/sops/v3/config"
+	"github.com/jacobpbrugh/sops/v3/stores"
 )
 
 // Store handles storage of dotenv data

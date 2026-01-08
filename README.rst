@@ -9,8 +9,8 @@ formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, HuaweiCloud KMS, ag
 
 ------------
 
-.. image:: https://pkg.go.dev/badge/github.com/getsops/sops/v3.svg
-    :target: https://pkg.go.dev/github.com/getsops/sops/v3
+.. image:: https://pkg.go.dev/badge/github.com/jacobpbrugh/sops/v3.svg
+    :target: https://pkg.go.dev/github.com/jacobpbrugh/sops/v3
 
 Documentation
 -------------
@@ -20,7 +20,7 @@ You can find the SOPS documentation on `getsops.io <https://getsops.io/>`_ under
 Security
 --------
 
-Please report any security issues privately using `GitHub's advisory form <https://github.com/getsops/sops/security/advisories>`_.
+Please report any security issues privately using `GitHub's advisory form <https://github.com/jacobpbrugh/sops/security/advisories>`_.
 
 License
 -------
@@ -32,7 +32,7 @@ Authors
 
 SOPS was initially launched as a project at Mozilla in 2015 and has been
 graciously donated to the CNCF as a Sandbox project in 2023, now under the
-stewardship of a `new group of maintainers <https://github.com/getsops/community/blob/main/MAINTAINERS.md>`_.
+stewardship of a `new group of maintainers <https://github.com/jacobpbrugh/community/blob/main/MAINTAINERS.md>`_.
 
 The original authors of the project were:
 
@@ -40,7 +40,7 @@ The original authors of the project were:
 * Julien Vehent @jvehent
 
 Furthermore, the project has been carried for a long time by AJ Bahnken @ajvb,
-and had not been possible without the contributions of numerous `contributors <https://github.com/getsops/sops/graphs/contributors>`_.
+and had not been possible without the contributions of numerous `contributors <https://github.com/jacobpbrugh/sops/graphs/contributors>`_.
 
 Credits
 -------
